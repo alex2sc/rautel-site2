@@ -32,6 +32,45 @@
             </div>
         </section>
     </main>
+    <style>
+        /* Ajustări pentru slider să arate ca în swipe.html */
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background: #fdfdfd;
+        }
+        .slider {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .slider img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(45, 64, 87, 0.8);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .prev:hover, .next:hover { background: #131b31; }
+    </style>
     <footer>
         <span>Școlnic Alexandru © 2026</span>
     </footer>
