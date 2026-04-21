@@ -71,6 +71,50 @@
         .next { right: 10px; }
         .prev:hover, .next:hover { background: #131b31; }
     </style>
+    <<script>
+    // AICI scrii denumirile pozelor tale care se află în folderul images
+    let images = [
+        "../images/slide1.jpg", 
+        "../images/slide2.jpg",
+        "../images/slide3.jpg",
+    ];
+
+    let index = 0;
+
+    // Această funcție schimbă poza pe ecran
+    function showSlide() {
+        const imgElement = document.getElementById("slide");
+        if (imgElement) {
+            imgElement.src = images[index];
+        }
+    }
+
+    function nextSlide() {
+        index = (index + 1) % images.length;
+        showSlide();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + images.length) % images.length;
+        showSlide();
+    }
+
+    // Această parte face să meargă SWIPE-ul pe telefon
+    let startX = 0;
+    const slideImg = document.getElementById("slide");
+
+    if (slideImg) {
+        slideImg.addEventListener("touchstart", function(e) {
+            startX = e.touches[0].clientX;
+        });
+
+        slideImg.addEventListener("touchend", function(e) {
+            let endX = e.changedTouches[0].clientX;
+            if (startX > endX + 50) nextSlide(); // Degetul s-a mișcat la stânga
+            if (startX < endX - 50) prevSlide(); // Degetul s-a mișcat la dreapta
+        });
+    }
+</script>
     <footer>
         <span>Școlnic Alexandru © 2026</span>
     </footer>
