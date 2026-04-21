@@ -2,25 +2,114 @@
 <html>
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width-device-width, initial-scale=1.0">
-   
-   <link rel="stylesheet" href="../css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-   <link rel="icon" href="../images/favicon.png">
-   <script src="../js/script.js"></script>
-   
-   <title>Răuțel - Localitatea mea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="icon" href="../images/favicon.png">
+    <script src="../js/script.js"></script>
+
+    <style>
+        .table-wrapper {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .table-wrapper h2 {
+            background-color: #2d4057;
+            color: #fff;
+            margin: 0;
+            padding: 20px 24px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .table-wrapper table {
+            width: 100% !important;
+            border-collapse: collapse !important;
+            background: none !important;
+        }
+
+        .table-wrapper thead tr {
+            background-color: #e8ecf0 !important;
+        }
+
+        .table-wrapper th {
+            padding: 12px 20px !important;
+            text-align: left !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            color: #2d4057 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            border: none !important;
+            border-bottom: 2px solid #b0bec8 !important;
+            background-color: #e8ecf0 !important;
+        }
+
+        .table-wrapper td {
+            padding: 13px 20px !important;
+            font-size: 15px !important;
+            color: #333 !important;
+            border: none !important;
+            border-bottom: 1px solid #f0f0f0 !important;
+            vertical-align: top !important;
+            background-color: transparent !important;
+        }
+
+        .table-wrapper tr:last-child td {
+            border-bottom: none !important;
+        }
+
+        .table-wrapper tr:hover td {
+            background-color: #f0f3f6 !important;
+        }
+
+        .table-wrapper td:first-child {
+            font-weight: 600 !important;
+            color: #555 !important;
+            width: 36% !important;
+        }
+
+        .table-wrapper .note {
+            font-size: 12px !important;
+            color: #777 !important;
+            margin-top: 4px !important;
+            text-transform: none !important;
+            letter-spacing: normal !important;
+            font-weight: 400 !important;
+        }
+
+        .iframe-section {
+            max-width: 700px;
+            margin: 30px auto;
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+
+    <title>Răuțel - Localitatea mea</title>
 </head>
 <body>
 
     <header>
         <img class="logo" src="../images/favicon2.png">
         <navbar>
-<a href="../index.html">Acasă</a>
-<a href="despre.html">Despre</a>
-<a href="exploreaza.html">Explorează</a>
-<a href="contacte.html">Contacte</a>
-<a href="parteneri.html">Parteneri</a>
+            <a href="../index.html">Acasă</a>
+            <a href="despre.html">Despre</a>
+            <a href="exploreaza.html">Explorează</a>
+            <a href="contacte.html">Contacte</a>
+            <a href="parteneri.html">Parteneri</a>
         </navbar>
         <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
     </header>
@@ -28,180 +117,94 @@
     <main>
 
         <section>
-            <h1 class="centered">Parteneri <br>
-            Primăria Răuțel</h1>
-             <section class="iframe-section">
-        <iframe src="https://www.primaria-rautel.md" class="iframe-container">
-        </iframe>
-    </section>
-    </iframe>
-            <!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Satul Răuțel – Informații generale</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      padding: 40px 16px;
-      margin: 0;
-    }
+            <h1 class="centered">Parteneri <br> Primăria Răuțel</h1>
 
-    .container {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
-      max-width: 700px;
-      width: 100%;
-    }
+            <section class="iframe-section">
+                <iframe src="https://www.primaria-rautel.md" class="iframe-container"></iframe>
+            </section>
 
-    h1 {
-      background-color: #2d4057;
-      color: #fff;
-      margin: 0;
-      padding: 20px 24px;
-      font-size: 20px;
-      font-weight: 600;
-    }
+            <div class="table-wrapper">
+                <h2>🏡 Satul Răuțel, raionul Fălești</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Caracteristică</th>
+                            <th>Detaliu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Raion</td>
+                            <td>Fălești, Republica Moldova</td>
+                        </tr>
+                        <tr>
+                            <td>Distanță față de Bălți</td>
+                            <td>~9 km
+                                <div class="note">Municipiul cel mai apropiat</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distanță față de Fălești</td>
+                            <td>19 km
+                                <div class="note">Centrul raional</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Distanță față de Chișinău</td>
+                            <td>134 km</td>
+                        </tr>
+                        <tr>
+                            <td>Coordonate geografice</td>
+                            <td>47°43′ N, 27°49′ E
+                                <div class="note">Altitudine: ~11 m față de nivelul mării</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rețea hidrografică</td>
+                            <td>Râul Răuțel + 2 pâraie
+                                <div class="note">Râul traversează satul de la vest la est pe ~5 km</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Relief</td>
+                            <td>Câmpia Bălțului – versant domol 4–7°
+                                <div class="note">Înălțime maximă: 183,6 m</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Climă</td>
+                            <td>Temperat continentală
+                                <div class="note">Iulie: +20°C medie | Ianuarie: −4°C medie</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Soluri</td>
+                            <td>Cernoziomice tipice moderat humifere</td>
+                        </tr>
+                        <tr>
+                            <td>Situri arheologice</td>
+                            <td>6 situri (2 movile funerare, 2 așezări Sântana de Mureș-Cerneahov, 2 mezolitice)
+                                <div class="note">Cele mai vechi urme: mileniile VII–VI î.Hr.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Întemeierea satului</td>
+                            <td>~1865–1867 (surse istorice)
+                                <div class="note">Monument al întemeietorilor ridicat în anul 2000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Servicii publice</td>
+                            <td>Transport public, salubrizare, apă-canal (ÎM Regia Apă-Canal Bălți)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+        </section>
 
-    thead tr {
-      background-color: #e8ecf0;
-    }
-
-    th {
-      padding: 12px 20px;
-      text-align: left;
-      font-size: 13px;
-      font-weight: 600;
-      color: #2d4057;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      border-bottom: 2px solid #b0bec8;
-    }
-
-    td {
-      padding: 13px 20px;
-      font-size: 15px;
-      color: #333;
-      border-bottom: 1px solid #f0f0f0;
-      vertical-align: top;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    tr:hover td {
-      background-color: #f0f3f6;
-    }
-
-    td:first-child {
-      font-weight: 600;
-      color: #555;
-      width: 36%;
-    }
-
-    .note {
-      font-size: 12px;
-      color: #777;
-      margin-top: 4px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>🏡 Satul Răuțel, raionul Fălești</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Caracteristică</th>
-          <th>Detaliu</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Raion</td>
-          <td>Fălești, Republica Moldova</td>
-        </tr>
-        <tr>
-          <td>Distanță față de Bălți</td>
-          <td>~9 km
-            <div class="note">Municipiul cel mai apropiat</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Distanță față de Fălești</td>
-          <td>19 km
-            <div class="note">Centrul raional</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Distanță față de Chișinău</td>
-          <td>134 km</td>
-        </tr>
-        <tr>
-          <td>Coordonate geografice</td>
-          <td>47°43′ N, 27°49′ E
-            <div class="note">Altitudine: ~11 m față de nivelul mării</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Rețea hidrografică</td>
-          <td>Râul Răuțel + 2 pâraie
-            <div class="note">Râul traversează satul de la vest la est pe ~5 km</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Relief</td>
-          <td>Câmpia Bălțului – versant domol 4–7°
-            <div class="note">Înălțime maximă: 183,6 m</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Climă</td>
-          <td>Temperat continentală
-            <div class="note">Iulie: +20°C medie | Ianuarie: −4°C medie</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Soluri</td>
-          <td>Cernoziomice tipice moderat humifere</td>
-        </tr>
-        <tr>
-          <td>Situri arheologice</td>
-          <td>6 situri (2 movile funerare, 2 așezări Sântana de Mureș-Cerneahov, 2 mezolitice)
-            <div class="note">Cele mai vechi urme: mileniile VII–VI î.Hr.</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Întemeierea satului</td>
-          <td>~1865–1867 (surse istorice)
-            <div class="note">Monument al întemeietorilor ridicat în anul 2000</div>
-          </td>
-        </tr>
-        <tr>
-          <td>Servicii publice</td>
-          <td>Transport public, salubrizare, apă-canal (ÎM Regia Apă-Canal Bălți)</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</body>
-</html>
     </main>
 
-</section>
-</section>
     <footer>
         <span>Școlnic Alexandru © 2026</span>
     </footer>
