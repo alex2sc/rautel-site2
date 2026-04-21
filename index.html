@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-   <link rel="icon" href="images/favicon.png">
-   <script src="js/script.js"></script>
-   
-   <title>Răuțel - Localitatea mea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="icon" href="images/favicon.png">
+    <script src="js/script.js"></script>
+    
+    <title>Răuțel - Localitatea mea</title>
 </head>
 <body>
     <header>
@@ -26,7 +26,13 @@
     <main>
         <section id="index">
 
-            <!-- SLIDER -->
+            <div class="index-info">
+                <h1>Răuțel - satul meu</h1>
+                <br/>
+                <a href="pages/despre.html" class="link-index">Află mai mult</a>
+            </div>
+
+            <!-- SLIDER sub titlu -->
             <div class="slider">
                 <div class="slider-track">
                     <img src="images/slide1.jpg" class="slide" alt="Răuțel 1">
@@ -42,12 +48,6 @@
                 <div class="slider-dots" id="slider-dots"></div>
             </div>
 
-            <div class="index-info">
-                <h1>Răuțel - satul meu</h1>
-                <br/>
-                <a href="pages/despre.html" class="link-index">Află mai mult</a>
-            </div>
-
         </section>
     </main>
     <footer>
@@ -60,7 +60,6 @@
         const slides = document.querySelectorAll('.slide');
         const dotsContainer = document.getElementById('slider-dots');
 
-        // Creează dots
         slides.forEach((_, i) => {
             const dot = document.createElement('span');
             dot.className = 'dot' + (i === 0 ? ' active' : '');
@@ -85,7 +84,6 @@
             updateSlider();
         }
 
-        // Auto-play la fiecare 4 secunde
         setInterval(() => changeSlide(1), 4000);
     </script>
 </body>
