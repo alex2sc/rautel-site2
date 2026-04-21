@@ -40,6 +40,83 @@ navbar a:hover {
     text-decoration: underline 1px;
 }
 
+/* ===== TABEL ===== */
+ 
+.table-wrapper {
+    max-width: 700px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+ 
+.table-wrapper h2 {
+    background-color: #2d4057;
+    color: #fff;
+    margin: 0;
+    padding: 20px 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+ 
+.info-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    background: none !important;
+}
+ 
+.info-table thead tr {
+    background-color: #e8ecf0 !important;
+}
+ 
+.info-table th {
+    padding: 12px 20px !important;
+    text-align: left !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #2d4057 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border: none !important;
+    border-bottom: 2px solid #b0bec8 !important;
+    background-color: #e8ecf0 !important;
+}
+ 
+.info-table td {
+    padding: 13px 20px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    border: none !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    vertical-align: top !important;
+    background-color: transparent !important;
+}
+ 
+.info-table tr:last-child td {
+    border-bottom: none !important;
+}
+ 
+.info-table tr:hover td {
+    background-color: #f0f3f6 !important;
+}
+ 
+.info-table td:first-child {
+    font-weight: 600 !important;
+    color: #2d4057 !important;
+    width: 36% !important;
+}
+ 
+.note {
+    display: block;
+    font-size: 12px !important;
+    color: #777 !important;
+    margin-top: 4px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
 footer {
     min-height: 80px;
     background: #2d4057;
